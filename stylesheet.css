@@ -1,0 +1,153 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background:linear-gradient(to right,#9c27b0,#8ecdff);
+}
+nav{
+    width: 80%;
+    position: sticky;
+    z-index: 1;
+    text-align: center;
+    margin: 20px auto;
+    display: flex;
+}
+.logo{
+    flex-basis: 20%;
+}
+
+.logo img{
+    width: 180px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul{
+    list-style: none;
+}
+.nav-links ul li{
+    display: inline-flex;
+    margin: 10px 20px;
+}
+.nav-links ul li a{
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    text-shadow: 0px 0px 10px  #DDD;
+}
+.nav-links ul li a:hover{
+    transform:translateY(-4px);
+    transition: all .2s ease-out;
+}
+.logo:hover{
+    transform:rotateX(360deg);
+    transition: all 1s ease-out;
+}
+
+.information{
+    width:1000px;
+    height:1000px;
+    position: absolute;
+    top:50%;
+    left:-10%;
+    transform: translateY(-50%);
+}
+#circle{
+    position: absolute;
+    top:0;
+    left:0;
+    width:1000px;
+    height:1000px; 
+    border-radius: 50%;
+    transform: rotate(0deg);
+    transition: 1s;
+}
+.feature{
+    position: absolute;
+    text-align: center;
+    display: flex;
+    color: white;
+    
+}
+.feature h1{
+    margin-left: 30px;
+}
+.feature p{
+    margin-top: 8px;
+}
+.feature img{
+    width: 70px;
+} 
+.one{
+    top:450px;
+    right:50px;
+}
+.tow{
+    top:150px;
+    left:350px;
+    transform: rotate(-90deg);
+}
+.three{
+   bottom: 450px;
+    left: 50px;
+    transform: rotate(-180deg);
+}
+.four{
+    bottom:150px;
+    right:350px;
+    transform: rotate(-270deg);
+}
+.mobile{
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.controls{
+    position: absolute;
+    top:50%;
+    right:10%;
+    transform: translateY(-50%);
+}
+.controls img{
+    width: 100px;
+}
+.controls #up-btn{
+    cursor: pointer;
+}
+.controls #down-btn{
+    cursor: pointer;
+    transform: rotateZ(180deg);
+}
+.controls h1{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    text-shadow: 0px 0px 10px  #DDD;
+}
+.overlay{
+    width: 0px;
+    height: 0px;
+    border-top: 500px solid white;
+    border-bottom: 500px solid white;
+    border-left: 500px solid white;
+    border-right: 500px solid rgba(0,0, 0, 0);
+}
+#up-btn:hover{
+    transform: translateY(-10px);
+    transition: all .2s ease-out;
+}
+#down-btn:hover{
+    transform: rotateZ(180deg) translateY(-10px);
+    transition: all .2s ease-out;
+}
